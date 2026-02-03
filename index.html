@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-interface</title>
+  <link rel="stylesheet" crossorigin href="/assets/index-CFoMwx2N.css">
+</head>
+
+<body
+    class=" bg-[url(/photos/2107.w026.n002.637B.p1.637.jpg)] bg-no-repeat bg-cover h-screen justify-center flex items-center">
+
+
+
+    <div class="user-section bg-white/30 backdrop-blur-sm p-2 m-1 w-xl h-fit rounded-2xl ">
+        <div class="registersection  h-full w-full">
+            <div id="login-form" class="">
+                <h1 class="text-violet-950 text-3xl font-semibold text-center ">Login</h1>
+                <form id="login" class=" p-3 m-4">
+                        <div class="group-section p-3">
+                            <label for="email" class="block text-[1.5rem]">Email:</label>
+                            <input type="email" id="reg-email" placeholder="Enter your email" class="border-2 border-white rounded p-2 text-xl outline-none m-0  w-full">
+                            <span id="reg-email-error"></span>
+                        </div>
+                        <div class="group-section p-3">
+                            <label for="reg-password" class="block text-[1.5rem]" >Password:</label>
+                            <input type="password" id="reg-pass" placeholder="Password" class="border-2 border-white  rounded p-2 text-xl outline-none  m-0 w-full">
+                            <span id="reg-pass-error"></span>
+                        </div>
+                         <div class="group-section p-3"> <p class="text-right text-xl text-white p-1 hover:underline" ><a href="#">Forget Password</a></p></div>
+                        <button id="btn" onclick="newRegistration()" class=" p-2 w-full m-1 rounded-2xl bg-violet-700 text-white font-semibold text-xl">Registration</button>
+                       <p class="text-right p-3 text-xl text-white">Create account. <a href="#" id="show-Register"  class="text-xl">Registration</a> </p>
+                </form>
+                 <div class="flex justify-between bg-amber-800 h-2 items-center  text-4xl">
+                    <span class="block h- text-blue-700 w-full m-4 "></span>
+                    <span >OR</span> 
+                    <span class="block h-1 bg-blue-700 w-full m-4"></span>
+                </div>
+            </div>
+                 <!--========Registration Section-->
+            <div id="reg-form" class=" hidden ">
+                <h1 class="text-violet-950 text-3xl font-semibold text-center ">Registration</h1>
+                <form class=" p-3 m-4">
+                  
+                    <div class="group-section p-3">
+                        <label for="email" class="block text-[1.5rem]">Email:</label>
+                        <input type="email" id="reg-email" placeholder="Enter your email"  class="border-2 border-white rounded p-2 text-xl outline-none m-0  w-full">
+                        <span id="reg-email-error"></span>
+                    </div>
+
+                    <div class="group-section p-3">
+                        <label for="reg-password" class="block text-[1.5rem]">Password:</label>
+                        <input type="password" id="reg-pass" placeholder="Password"  class="border-2 border-white rounded p-2 text-xl outline-none m-0  w-full">
+                        <span id="reg-pass-error"></span>
+                    </div>
+
+                    <div class="group-section p-3">
+                        <label for="com-password " class="block text-[1.5rem]">Confirm Password:</label>
+                        <input type="password" id="confirm-password" placeholder="confirm Password" class="border-2 border-white rounded p-2 text-xl outline-none m-0  w-full">
+                        <span id="reg-error"></span>
+                    </div>
+                    <button id="btn" onclick="userLogin()" class=" p-2 w-full m-1 rounded-2xl bg-violet-700 text-white font-semibold text-xl">Registration</button>
+                        <p class="text-right p-3 text-xl text-white mx-3">You have account. <a href="#" id="show-Login" onclick="goRegister()" class="text-xl mr-8">Login</a> </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
